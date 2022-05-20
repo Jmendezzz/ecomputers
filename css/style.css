@@ -1,52 +1,120 @@
-*{
+* {
     margin: 0;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Play', sans-serif;
+    color: white;
 
 }
-.flex-container{
+
+.flex-container {
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: black;
 }
-.nav{
+
+.nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    color: white;
 }
-.nav-sup{
-    margin: 50px;
-    color: black;
+
+.nav-sup {
+    margin: 50px 0px;
     display: flex;
     justify-content: center;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .1rem #fff,
+        0 0 1rem #1317fe,
+        0 0 0.5rem #1317fe,
+        0 0 1.4rem #1317fe,
+        inset 0 0 1.3rem #1317fe;
 }
-.nav-ul{
+.redes-sociales img {
+
+    width: 100px;
+    height: 100px;
+
+}
+
+.nav-sup h1 {
+    color: white;
+    font-weight: 200;
+    font-size: 4.2rem;
+    animation: pulsate 1.5s infinite alternate;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #1317fe,
+        0 0 82px #1317fe,
+        0 0 92px #1317fe,
+        0 0 102px #1317fe,
+        0 0 151px #1317fe;
+}
+
+@keyframes pulsate {
+
+    100% {
+
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px #1317fe,
+            0 0 80px #1317fe,
+            0 0 90px #1317fe,
+            0 0 100px #1317fe,
+            0 0 150px #1317fe;
+    }
+
+    0% {
+
+        text-shadow:
+            0 0 2px #fff,
+            0 0 4px #fff,
+            0 0 6px #fff,
+            0 0 10px #1317fe,
+            0 0 45px #1317fe,
+            0 0 55px #1317fe,
+            0 0 70px #1317fe,
+            0 0 80px #1317fe
+    }
+}
+
+.nav-ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: rgb(52, 75, 110);
+    background-color: #1317fe;
     padding: 20px;
     list-style: none;
 }
 
-.nav-ul li:hover{
+.nav-ul li:hover {
     cursor: pointer;
-    color:rgb(219, 218, 218);
+    color: rgb(219, 218, 218);
 }
-.main-container{
+
+.main-container {
     flex-direction: column;
-    
+
     height: 100vh;
     width: 70vw;
     border: 1px solid black;
 }
-.main-container img{
+
+.main-container img {
     width: 100%;
     height: 50%;
 }
-.about-us{
-    margin-top:10px;
+
+.about-us {
+    margin-top: 10px;
 }
