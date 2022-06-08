@@ -20,21 +20,20 @@
             </div>
             <ul class="nav-ul">
                 
-                <li>ABOUT US</li>
+                <li class="p">ABOUT US</li>
 
-                <li>BUILD YOUR PC</li>
+                <a href="#pc"><li class="p">BUILD YOUR PC</li></a>
 
             </ul>
         </div>
-        <div class="main-container">
+        <div class="slider">
 
-            <img src="images/pc.png">
+        </div>
+            
 
-            <div class="about-us">
-
-                <h2>ABOUT US</h2>
-                <p>Build your pc with us, the best build for the best price</p>
-            </div>
+        <div class="about-us">
+            <p>BUILD YOUR PC WITH US, THE BEST BUILD FOR THE BEST PRICE</p>
+        </div>
             <div class="row-container">
 
                 <div class="contenedor">
@@ -45,7 +44,7 @@
                                  <h3>LOW PC</h3>
                                  <p>Only to do works! </p>
                                  <li>250GB SSD</li>
-                                 <li>INTEL PENTIUM 2560G</li>
+                                 <li>INTEL CORE I3 1220PE</li>
                                  <LI>8GB RAM</LI>
                              </div>
                          </figure>
@@ -76,14 +75,50 @@
                                  <li>RTX 3080TI 16GB</li>
                                  <li>SSD 1TB</li>
                                  <li>64GB RAM</li>
-                                 <li></li>
-                                 <li></li>
+                                 <li>INTEL CORE i11</li>
                              </div>
                          </figure>
                      </a>
                  </div>
+                 
             </div>
+            <div class="comments"><p class="p">COMMENTS</p></div>
+            <div class="row-container comments-container">
+                <div class="column-container comments">
+                    <p>"This web site help me a lot for do a good build for my studies, I really love this!"</p>
+                    <p class="p">Kevin</p>
+                </div>
+                <div class="column-container comments">
+                    <p>"Guys use this web site, you can create your own pc with a low budget, the best in the internet!"</p>
+                    <p class="p">Jhon Merchan</p>
+                </div>
+                <div class="column-container comments">
+                    <p>"I can't believe this, this build of my PC is so economic and my PC is soo fast! I can play a lot of games online"</p>
+                    <p class="p">Alejandro Yances</p>
+                </div>
+            </div>
+            <div class="about-us">
+                <p class="p">PLAY YOUR FAVORITE GAMES</p>
+            </div>
+            <div class="slider-2"></div>
+            <div class="column-container"><p class="p active">BUILD YOUR PC</p></div>
+            
+            <div class="row-container budget">
+                <p class="p">SELECT YOUR BUDGET</p>
+                <select id="budget" name="select">
+                    <option selected disabled>Select your budget</option>
+                    <option>250$</option>
+                    <option>900$</option>
+                    <option>2400$</option>
+                </select>
+            </div>
+            <button id="button">Send</button>
+            <p class="p title" id="pc">YOUR PC</p>
+            <div id="computer-container"></div>
+            
+
         </div>
     </div>   
+    <script src="js/main.js"></script>
 </body>
 </html>

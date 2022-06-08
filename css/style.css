@@ -29,7 +29,9 @@ body{
     justify-content: center;
     width: 100%;
 }
-
+a{
+    text-decoration:  none;
+}
 .nav-sup {
     margin: 50px 0px;
     display: flex;
@@ -155,12 +157,13 @@ body{
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,103,123,0.7);
+    background: rgba(4, 6, 132, 0.7);
     transition: all 400ms ease-out;
     opacity: 0;
     visibility: hidden;
    text-align: center;
 }
+
 .contenedor figure:hover > .capa {
     opacity: 1;
     visibility: visible;
@@ -195,4 +198,180 @@ body{
     display:flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 30px;
+}
+.slider{
+    width: 1000px;
+    height: 400px;
+    background-image:url('/images/desktop2.jpg');
+    background-size: cover;
+    animation: slide 20s infinite;
+
+}
+@keyframes slide{
+    25%{
+        background-image: url("/images/desktop1.jpg");
+    }
+    50%{
+        background-image: url("/images/dektop3.jpg");
+    }
+    75%{
+        background-image: url("/images/desktop2.jpg");
+    }
+    100%{
+        background-image: url("/images/desktop1.jpg");
+    }
+
+}
+.about-us{
+    margin:20px;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.about-us p{
+    color: rgb(199, 199, 199);
+    transition: all .5s;
+}
+.about-us p:hover{
+    cursor: pointer;
+    color: #ffff;
+    text-shadow:0 0 10px #ffff,
+                0 0 20px #ffff,
+                0 0 40px #ffff,
+                0 0 80px #ffff,
+                0 0 120px #ffff,
+                0 0 160px #ffff;
+}
+.p{
+    color: rgb(199, 199, 199);
+    transition: all .5s;
+    font-size:30px;
+}
+.p:hover{
+        cursor: pointer;
+        color: #ffff;
+        text-shadow:0 0 10px #ffff,
+                    0 0 20px #ffff,
+                    0 0 40px #ffff,
+                    0 0 80px #ffff,
+                    0 0 120px #ffff,
+                    0 0 160px #ffff;
+}
+.column-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.comments{
+    width: 200px;
+    text-align: center;
+}
+.comments p{
+    margin-top: 30px;
+}
+.comments-container{
+    width: 70vw;
+    justify-content: space-evenly;
+}
+
+.slider-2{
+    width: 1000px;
+    height: 500px;
+    background-image:url('/images/gears.jpg');
+    background-size:cover;
+    animation: slide-2 15s infinite;
+
+}
+@keyframes slide-2{
+    25%{
+        background-image: url("/images/gears.jpg");
+    }
+    50%{
+        background-image: url("/images/FIFAjpg.jpg");
+    }
+    75%{
+        background-image: url("/images/GOSjpg.jpg");
+    }
+    100%{
+        background-image: url("/images/gtaV.jpg");
+    }
+
+}
+.column-container {
+    margin-top: 30px;
+}
+.active{
+    font-size: 50px;
+    animation: pulsate-2 1.5s infinite alternate;
+}
+@keyframes pulsate-2 {
+
+    100% {
+
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 20px #fff,
+            0 0 25px #b2b2b4,
+            0 0 35px #b2b2b4,
+            0 0 45px #b2b2b4,
+            0 0 50px #b2b2b4,
+            0 0 60px #b2b2b4;
+    }
+
+    0% {
+
+        text-shadow:
+            0 0 2px #fff,
+            0 0 4px #fff,
+            0 0 6px #fff,
+            0 0 10px #b2b2b4
+            0 0 15px #b2b2b4,
+            0 0 25px #b2b2b4,
+            0 0 30px #b2b2b4,
+            0 0 40px #b2b2b4
+    }
+}
+select{
+    color: black;
+    border-radius:  3em;
+    margin-left: 20px;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+}
+
+option{
+    color: black;
+    font-size: 20px;
+}
+.title{
+    margin-top: 50px;
+    font-size: 40px;
+    color: white;
+}
+button{
+    margin-top: 20px;
+    border-radius: 3em;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    height: 40px;
+    width: 150px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+#computer-container{
+    display: flex;
+    flex-direction: row;
+
+}
+.images{
+    width: 500px;
+    height: 500px;
 }
